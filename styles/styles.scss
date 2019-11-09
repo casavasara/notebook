@@ -1,0 +1,123 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans:400,400i,800&display=swap);
+@import "../bootstrap/scss/bootstrap";
+
+
+
+$Amatic: 'Amatic SC', cursive;
+$OpenSans: 'Open Sans', sans-serif;
+
+//Base
+
+html {
+    height: 100%;
+  }
+
+body {
+    background-image: url(../img/linedpaper.png);
+    /* Background pattern from Toptal Subtle Patterns */
+    padding-top: 5.5rem;
+    
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Avoid the IE 10-11 `min-height` bug. */
+
+    }
+
+main {
+    flex: 1 0 auto;
+    /* Prevent Chrome, Opera, and Safari from letting these items 
+    shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+  }
+
+  h1, h3, .navbar-brand, #relaxed {
+    font-family: $Amatic;
+    font-size: 2rem;
+}
+
+
+// MODULES
+
+
+.navbar {
+    background-image: url(../img/linedpaper.png);
+}
+
+.footer {
+    font-family: $Amatic;
+    font-size: 1.5rem;
+    flex-shrink: 0; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+       
+}
+
+// card-modules
+
+
+.card-columns {
+    @include media-breakpoint-only(sm) {
+        column-count: 2 ;
+      }
+    @include media-breakpoint-only(lg) {
+    column-count: 3;
+            }
+    @include media-breakpoint-only(xl) {
+                column-count: 4;
+                        }
+    }
+
+
+%postit {
+
+    .card-title { 
+        font-family: $Amatic;
+        font-size: 2rem;
+        text-align: center;
+     
+
+    }
+}
+.postit-yellow {
+    @extend %postit;
+        background-color: $yellow;
+     
+}
+
+.postit-teal {
+    @extend %postit;
+        background-color: $teal;
+}
+
+.postit-gray {
+    @extend %postit;
+    background-color: $gray-700;
+
+}
+
+// accordion modules
+
+
+
+// table modules
+
+.git tr :first-child::before {
+
+    content: "git ";
+    color: gray;
+    
+   }
+
+table {
+    
+    font-size: 1rem;
+}
+
+// THEME
+
+
+
+
+
+
+
+

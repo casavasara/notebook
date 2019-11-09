@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta content="">
+    <link href="styles/styles.css" rel="stylesheet">
+    <style></style>
+</head>
+
+
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+        <a class="navbar-brand" href="#">Notebook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cs50.html">CS50</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reference
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="git.html">Git</a>
+                        <a class="dropdown-item" href="css.html">CSS</a>
+                        <a class="dropdown-item" href="sass.html">Sass</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+        </div>
+    </div>
+</nav>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>CS50’s Web Programming with Python and JavaScript</h1>
+        <P> <a href="https://www.youtube.com/playlist?list=PLhQjrBD2T382hIW-IsOVuXP1uMzEvmcE5"><h3>Lectures @ YouTube</h3></a>
+        </P>
+       
+        <div class="accordion" id="accordionExample">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="false" aria-controls="collapseOne">
+                            <span id="project">Project 0: Homepage</span>
+                        </button>
+                    </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                    <div class="card-body">
+
+                        <ul>
+                            <h3>Objectives</h3>
+                            <li>Become more comfortable with HTML and CSS to design and style webpages.</li>
+                            <li>Learn to use SCSS to write more complex stylesheets for your webpages.</li>
+                        </ul>
+                        <ol>
+                            <h3>Requirements:</h3>
+
+                            <li><del>Your website must contain at least four different .html pages, and it
+                                    should be
+                                    possible to get from any page
+                                    on your website to any other page by following one or more hyperlinks.</del></li>
+
+                            <li><del>Your website must include at least one list (ordered or unordered), at least
+                                    one table, and at least one image.</del></li>
+
+                            <li><del>Your website must have at least one stylesheet file.</li>
+                            <li><del>Your stylesheet(s) must use at least five different CSS properties, and at least five
+                                different types of CSS selectors. You must use the #id selector at least once, and the
+                                .class selector at least once.</del></li>
+                            <li>Your stylesheet(s) must include at least one mobile-responsive @media query, such that
+                                something
+                                about the
+                                styling changes for smaller screens.</li>
+                            <li><del>You must use Bootstrap 4 on your website, taking advantage of at least one Bootstrap
+                                component, and
+                                using at
+                                least two Bootstrap columns for layout purposes using Bootstrap’s grid model.</del></li>
+                            <li>Your stylesheets must use at least one SCSS variable, at least one example of SCSS
+                                nesting,
+                                and at
+                                least one
+                                use of SCSS inheritance.</li>
+                            <li>In README.md, include a short writeup describing your project, what’s contained in each
+                                file, and
+                                (optionally)
+                                any other additional information the staff should know about your project.</li>
+
+                        </ol>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Project 1: Books </button>
+                    </h2>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body">
+                        <h2>Objectives</h2>
+                        <ul>
+                            <li> Become more comfortable with Python.</li>
+                            <li> Gain experience with Flask.</li>
+                            <li> Learn to use SQL to interact with databases.</li>
+                        </ul>
+                        <a href="https://docs.cs50.net/ocw/web/projects/1/project1.html">
+                            <h2>Getting Started</h2>
+                        </a>
+                        <ol>
+                            <li>Set up a PostgreSQL database</li>
+                            <li>Set up Python and Flask</li>
+                            <li>Get Goodreads API-key</li>
+
+                        </ol>
+                        <h2>Requirements:</h2>
+
+                        <ol>
+                            <li>Registration: Users should be able to register for your website, providing (at minimum)
+                                a username and password.
+                            </li>
+                            <li>Login: Users, once registered, should be able to log in to your website with their
+                                username and password.
+                            </li>
+                            <li>Logout: Logged in users should be able to log out of the site.
+                            </li>
+                            <li>Import: Provided for you in this project is a file called books.csv, which is a
+                                spreadsheet in CSV format of 5000 different books. Each one has an ISBN number, a title,
+                                an author, and a publication year. In a Python file called import.py separate from your
+                                web application, write a program that will take the books and import them into your
+                                PostgreSQL database. You will first need to decide what table(s) to create, what columns
+                                those tables should have, and how they should relate to one another. Run this program by
+                                running python3 import.py to import the books into your database, and submit this
+                                program with the rest of your project code.</li>
+                            <li>Search: Once a user has logged in, they should be taken to a page where they can search
+                                for a book. Users should be able to type in the ISBN number of a book, the title of a
+                                book, or the author of a book. After performing the search, your website should display
+                                a list of possible matching results, or some sort of message if there were no matches.
+                                If the user typed in only part of a title, ISBN, or author name, your search page should
+                                find matches for those as well!</li>
+                            <li>Book Page: When users click on a book from the results of the search page, they should
+                                be taken to a book page, with details about the book: its title, author, publication
+                                year, ISBN number, and any reviews that users have left for the book on your website.
+                            </li>
+                            <li>Review Submission: On the book page, users should be able to submit a review: consisting
+                                of a rating on a scale of 1 to 5, as well as a text component to the review where the
+                                user can write their opinion about a book. Users should not be able to submit multiple
+                                reviews for the same book.</li>
+                            <li>Goodreads Review Data: On your book page, you should also display (if available) the
+                                average rating and number of ratings the work has received from Goodreads.</li>
+                            <li>API Access: If users make a GET request to your website’s /api/<isbn> route, where
+                                    <isbn> is an ISBN number, your website should return a JSON response containing the
+                                        book’s title, author, publication date, ISBN number, review count, and average
+                                        score. The resulting JSON should follow the format:
+                                        {
+                                        "title": "Memory",
+                                        "author": "Doug Lloyd",
+                                        "year": 2015,
+                                        "isbn": "1632168146",
+                                        "review_count": 28,
+                                        "average_score": 5.0
+                                        }
+                                        If the requested ISBN number isn’t in your database, your website should return
+                                        a 404 error.</li>
+                            <li>You should be using raw SQL commands (as via SQLAlchemy’s execute method) in order to
+                                make database queries. You should not use the SQLAlchemy ORM (if familiar with it) for
+                                this project. </li>
+                            <li>In README.md, include a short writeup describing your project, what’s contained in each
+                                file, and (optionally) any other additional information the staff should know about your
+                                project.</li>
+                            <li>If you’ve added any Python packages that need to be installed in order to run your web
+                                application, be sure to add them to requirements.txt!</li>
+                        </ol>
+                        <p>Beyond these requirements, the design, look, and feel of the website are up to you! You’re
+                            also welcome to add additional features to your website, so long as you meet the
+                            requirements laid out in the above specification!</p>
+
+                        <h2>Hints</h2>
+                        <ul>
+                            <li>At minimum, you’ll probably want at least one table to keep track of users, one table to
+                                keep track of books, and one table to keep track of reviews. But you’re not limited to
+                                just these tables, if you think others would be helpful!</li>
+                            <li>In terms of how to “log a user in,” recall that you can store information inside of the
+                                session, which can store different values for different users. In particular, if each
+                                user has an id, then you could store that id in the session (e.g., in
+                                session["user_id"]) to keep track of which user is currently logged in.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Project 2: Flack
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Coming soon! In the mean time, check out the Project @ <a
+                            href="https://docs.cs50.net/ocw/web/projects/2/project2.html">CS50 Docs</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Project 3: Pizza
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Coming soon! In the mean time, check out the Project @ <a
+                            href="https://docs.cs50.net/ocw/web/projects/3/project3.html">CS50 Docs</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Final Project
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                    <div class="card-body">
+                        Coming soon! In the mean time, check out the Project @ <a
+                            href="https://docs.cs50.net/ocw/web/projects/final/final.html">CS50 Docs</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+      <p> <a href="https://cs50.harvard.edu/web/"><h3>CS50 @ harvard.edu</h3></a></p> 
+    </div>
+
+
+    <footer class="footer mt-auto py-3"><div class="container text-center text-muted">Notebook of Lituanina. Last scribbled in: <strong>November 2019.</strong> </div></footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
