@@ -1,0 +1,222 @@
+<html>
+
+<head>
+    <title></title>
+    <meta content="">
+    <link href="styles/styles.css" rel="stylesheet">
+    <style></style>
+</head>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+        <a class="navbar-brand" href="#">Notebook</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cs50.html">CS50</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Reference
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="git.html">Git</a>
+                        <a class="dropdown-item" href="css.html">CSS</a>
+                        <a class="dropdown-item" href="sass.html">Sass</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+        </div>
+    </nav>
+
+<body>
+
+<main>
+    <div class="container">
+    <div class="row">
+
+    <div class="col-md-6">
+
+        <table class="table-sm table-striped table-bordered git">
+
+            <tr>
+                <td>clone &lt;url&gt;</td>
+                <td>clones / copies repository</td>
+            </tr>
+            <tr>
+                <td>add</td>
+                <td>addes file to be tracked / commited / pushed</td>
+            </tr>
+            <tr>
+                <td>commit -m "message"</td>
+                <td>adds message to the commit</td>
+            </tr>
+            <tr>
+                <td>commit -am</td>
+                <td>combines add and commit in one step</td>
+            </tr>
+            <tr>
+                <td>status</td>
+                <td>status of current repository</td>
+            </tr>
+            <tr>
+                <td>push</td>
+                <td>pushes repository online</td>
+            </tr>
+            <tr>
+                <td>merge &lt;branch name&gt;</td>
+                <td>merge branches (from master)</td>
+            </tr>
+            <tr>
+                <td>push --set-upstream origin &lt;branch name&gt;</td>
+                <td>pushes local branch to repository</td>
+            </tr>
+            <tr>
+                <td>reset --hard &lt;commit&gt;</td>
+                <td>resets local copy to the commit # of repository</td>
+            </tr>
+            <tr>
+                <td>reset --hard origin/master</td>
+                <td>resets local copy to original commit</td>
+            </tr>
+            <tr>
+                <td>branch</td>
+                <td>display repository <a href="#branch">branches</a></td>
+            </tr>
+            <tr>
+                <td>branch &lt;name&gt;</td>
+                <td>create new branch</td>
+            </tr>
+            <tr>
+                <td>checkout</td>
+                <td>change branch or commit</td>
+            </tr>
+            <tr>
+                <td>merge &lt;branch name&gt;</td>
+                <td>merge branches (from master)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="col-md-6">
+
+        <div id="branch">
+            <svg width="450" height="300" xmlns="http://www.w3.org/2000/svg">
+                <!-- Created with Liveweave.com -->
+                <g>
+                    <title>background</title>
+                    <rect fill="#fcffff" id="canvas_background" height="302" width="402" y="-1" x="-1" />
+                    <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                        <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%" />
+                    </g>
+                </g>
+                <g>
+                    <title>Branch</title>
+                    <ellipse ry="12" rx="12" id="svg_2" cy="210" cx="43.5" stroke-width="1.5" stroke="#000"
+                        fill="#007fff" />
+                    <ellipse ry="12" rx="12" id="svg_3" cy="210.4375" cx="102" stroke-width="1.5" stroke="#000"
+                        fill="#007fff" />
+                    <ellipse ry="12" rx="12" id="svg_4" cy="210.4375" cx="158" stroke-width="1.5" stroke="#000"
+                        fill="#007fff" />
+                    <ellipse ry="12" rx="12" id="svg_5" cy="210.4375" cx="212" stroke-width="1.5" stroke="#000"
+                        fill="#007fff" />
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_7" y="240.4375" x="34.5" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" stroke="#000" fill="#000000">first</text>
+                    <text stroke="#000" xml:space="preserve" text-anchor="start"
+                        font-family="Helvetica, Arial, sans-serif" font-size="12" id="svg_8" y="250.4375" x="26.5"
+                        fill-opacity="null" stroke-opacity="null" stroke-width="0" fill="#000000">commit</text>
+                    <text stroke="#000" transform="matrix(0.8820116566043765,0,0,1,9.88877735700546,0) "
+                        xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_9" y="238.4375" x="82.633772" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" fill="#000000">changes</text>
+                    <text stroke="#000" transform="matrix(0.8820116566043765,0,0,1,9.88877735700546,0) "
+                        xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_10" y="237.4375" x="149.526312" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" fill="#000000">changes</text>
+                    <ellipse ry="12" rx="12" id="svg_11" cy="140.4375" cx="212" stroke-width="1.5" stroke="#000"
+                        fill="#007fff" />
+                    <line stroke-linecap="null" stroke-linejoin="null" id="svg_12" y2="210.4375" x2="90.5" y1="210.4375"
+                        x1="56.5" fill-opacity="null" stroke-opacity="null" stroke-width="0.5" stroke="#000"
+                        fill="none" />
+                    <line stroke-linecap="null" stroke-linejoin="null" id="svg_14" y2="148.4375" x2="203.5"
+                        y1="201.4375" x1="165.5" fill-opacity="null" stroke-opacity="null" stroke-width="0.5"
+                        stroke="#000" fill="none" />
+                    <ellipse ry="12" rx="12" id="svg_18" cy="140.4375" cx="274" stroke-width="1.5" stroke="#000"
+                        fill="#007fff" />
+                    <ellipse ry="12" rx="12" id="svg_19" cy="211.4375" cx="274" stroke-width="1.5" stroke="#000"
+                        fill="#007fff" />
+                    <line stroke-linecap="null" stroke-linejoin="null" id="svg_20" y2="211.4375" x2="113.5"
+                        y1="211.4375" x1="147.5" fill-opacity="null" stroke-opacity="null" stroke-width="0.5"
+                        stroke="#000" fill="none" />
+                    <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_21" y2="212.4375"
+                        x2="202.5" y1="211.4375" x1="166.500001" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0.5" fill="none" />
+                    <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_22" y2="211.4375"
+                        x2="259.500001" y1="211.4375" x1="223.5" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0.5" fill="none" />
+                    <line stroke-linecap="null" stroke-linejoin="null" id="svg_23" y2="138.4375" x2="263.5"
+                        y1="137.4375" x1="224.5" fill-opacity="null" stroke-opacity="null" stroke-width="0.5"
+                        stroke="#000" fill="none" />
+                    <line stroke-linecap="null" stroke-linejoin="null" id="svg_24" y2="200.4375" x2="277.5"
+                        y1="151.4375" x1="277.5" fill-opacity="null" stroke-opacity="null" stroke-width="0.5"
+                        stroke="#000" fill="none" />
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_25" y="237.4375" x="194.5" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" stroke="#000" fill="#000000">fix bug</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_26" y="114.4375" x="150.5" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" stroke="#000" fill="#000000">start new feature</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_27" y="106.4375" x="265.5" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" stroke="#000" fill="#000000">work on new</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_28" y="117.4375" x="267.5" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" stroke="#000" fill="#000000">feature</text>
+                    <text xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif"
+                        font-size="12" id="svg_29" y="238.4375" x="255.5" fill-opacity="null" stroke-opacity="null"
+                        stroke-width="0" stroke="#000" fill="#000000">merge</text>
+                    <text font-weight="bold" xml:space="preserve" text-anchor="start"
+                        font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_30" y="146.4375" x="321.5"
+                        fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">feature
+                        (branch)</text>
+                    <text font-weight="bold" xml:space="preserve" text-anchor="start"
+                        font-family="Helvetica, Arial, sans-serif" font-size="16" id="svg_31" y="219.4375" x="325.5"
+                        fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">master
+                        (branch)</text>
+                    <path stroke="#000" transform="rotate(-180 307.5224609375,214.6911468505859) " id="svg_32"
+                        d="m306.567847,219.739637l3.329517,-3.118181l-6.437458,0l-6.437444,0l0,-1.930302l0,-1.930303l6.363593,0c3.499971,0 6.363588,-0.097837 6.363588,-0.217416c0,-0.119576 -1.393328,-1.522758 -3.09628,-3.11818l-3.09629,-2.900767l2.861918,0l2.861907,0l4.370781,4.087244l4.370779,4.087242l-4.379163,4.079422l-4.379162,4.079422l-3.012903,0l-3.01291,0l3.329526,-3.118182l0.000001,0.000001z"
+                        stroke-opacity="null" stroke-width="0" fill="#999999" />
+                    <path stroke="#000" transform="rotate(-180 304.5224609375,141.6911468505859) " id="svg_33"
+                        d="m303.56785,146.73964l3.32951,-3.11818l-6.43745,0l-6.43745,0l0,-1.9303l0,-1.93031l6.3636,0c3.49997,0 6.36358,-0.09784 6.36358,-0.21741c0,-0.11958 -1.39332,-1.52276 -3.09628,-3.11818l-3.09629,-2.90077l2.86192,0l2.86191,0l4.37078,4.08724l4.37078,4.08724l-4.37916,4.07943l-4.37917,4.07942l-3.0129,0l-3.01291,0l3.32953,-3.11818l0,0z"
+                        stroke-opacity="null" stroke-width="0" fill="#999999" />
+                </g>
+            </svg></div>
+    </div></div>
+</div></main>
+
+<footer class="footer mt-auto py-3"><div class="container text-center text-muted">Notebook of Lituanina. Last scribbled in: <strong>November 2019.</strong> </div></footer>
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</html>
